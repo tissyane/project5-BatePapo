@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -19,13 +21,55 @@
     </header>
     
     <main>
-        <div class="conteudo1">
-            <p>Conteúdo 1</p>
-        </div>
-        <div class="conteudo2">
-            Conteudo 2
-        </div>
+        
     </main>
+
+    <aside>
+        <div class="top">
+            <h1>Escolha um contato</br>
+                para enviar mensagem:</h1>
+        </div>
+        <div class="contact_list">
+            <div class="all">
+                <div class="contact_info">
+                    <ion-icon name="people"></ion-icon>
+                    <p>Todos</p>
+                </div>
+                <div><img src="imagens/check.png" alt=""></div>
+            </div>
+            <div class="contact">
+                <div class="contact_info">
+                    <ion-icon name="person-circle"></ion-icon>
+                    <p>João</p>
+                </div>
+                <div><img src="imagens/check.png" alt=""></div>
+            </div>
+            <div class="contact">
+                <div class="contact_info">
+                    <ion-icon name="person-circle"></ion-icon>
+                    <p>Maria</p>
+                </div>
+                <div><img src="imagens/check.png" alt=""></div>
+            </div>
+        </div>
+        <div class="visibility">
+            <h1>Escolha a visibilidade:</h1>
+        </div>
+        <div class="lock">
+            <div class="contact_info">
+                <ion-icon name="lock-open"></ion-icon>
+                <p>Público</p>
+            </div>
+            <div><img src="imagens/check.png" alt=""></div>            
+        </div>
+        <div class="lock">
+            <div class="contact_info">
+                <ion-icon name="lock-closed"></ion-icon>
+                <p>Reservadamente</p>
+            </div>
+            <div><img src="imagens/check.png" alt=""></div>
+        </div>
+    </aside>
 
     <footer>
         <input type="text" placeholder="Escreva aqui..." />

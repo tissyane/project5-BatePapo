@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
 
 body {
-    max-width: 614px;
-    font-family: "Roboto", sans-serif;
+    width: 614px;
+    font-family: 'Roboto', sans-serif;
     background-color: #F3F3F3;
+    
 }
 
 
@@ -21,8 +21,7 @@ header {
 }
 
 header ion-icon {
-    width: 43px;
-    height: 31px;
+    font-size: 45px;
     margin-right: 22px;
 }
 
@@ -44,19 +43,19 @@ footer {
 }
 
 footer ion-icon {
-    width: 26px;
-    height: 26px;
+    font-size: 26px;
     margin-right: 22px;
 }
 
 input {
     border: none;
     margin-left: 17px;
+    height: 30px;
+    width: 250px;
     
 }
 
 input::placeholder {
-    font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: 400;
     font-style: italic;
@@ -68,15 +67,75 @@ main {
     height: 1000px;
     margin-top: 80px;
     margin-bottom: 80px;
-    position: relative;
+    
 }
 
-.conteudo1 {
-    color:#FFFFFF
+
+
+aside {
+    width: 259px;
+    height: 1000px;    
+    margin-left: 118px;
+    background-color: #FFFFFF; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;  
 }
 
-.conteudo2 {
-    color: green;
-    position: absolute;
-    bottom: 0;
+.top, .visibility {
+    height: 84px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.visibility {
+    height: 60px;
+}
+
+.all, .contact{
+    height: 36px;
+    margin-right: 27px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.contact_list ion-icon {
+    font-size: 25px;
+    margin-left: 18px;
+    margin-right: 8px;
+}
+
+.contact_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lock {
+    margin-top: 10px;
+    margin-right: 27px;
+    font-size: 16px;
+    font-weight: 400;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lock ion-icon {
+    font-size: 22px;
+    margin-left: 18px;
+    margin-right: 8px;
 }
