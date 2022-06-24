@@ -17,14 +17,45 @@
 
     <header>
         <img src="imagens/logopequena.png" alt="">
-        <ion-icon name="people"></ion-icon>
+        <ion-icon onclick="showParticipants()" name="people"></ion-icon>
     </header>
     
     <main>
-        
+        <div onclick="hideParticipants()" class="mensagens">
+            <div class="enter_room">
+                <div class="time">
+                    <p>(09:21:45)</p>
+                </div>
+                <p><strong>João</strong> entra na sala...</p>
+            </div>
+            <div class="msg_to_all">
+                <div class="time">
+                    <p>(09:22:28)</p>
+                </div>
+                <p><strong>João</strong> para <strong>Todos</strong>:  Bom dia</p>
+            </div>
+            <div class="msg_public">
+                <div class="time">
+                    <p>(09:22:38)</p>
+                </div>
+                <p><strong>Maria</strong> para <strong>João</strong>:  Oi João :)</p>
+            </div>
+            <div class="msg_private">
+                <div class="time">
+                    <p>(09:22:48)</p>
+                </div>
+                <p><strong>João</strong> reservadamente para <strong>Maria</strong>:  Oi gatinha quer tc?</p>
+            </div>
+            <div class="live_room">
+                <div class="time">
+                    <p>(09:22:58)</p>
+                </div>
+                <p><strong>Maria</strong> sai da sala...</p>
+            </div>
+        </div>
     </main>
 
-    <aside>
+    <aside class="participants escondido">
         <div class="top">
             <h1>Escolha um contato</br>
                 para enviar mensagem:</h1>
@@ -69,15 +100,17 @@
             </div>
             <div><img src="imagens/check.png" alt=""></div>
         </div>
+
+        
     </aside>
 
     <footer>
-        <input type="text" placeholder="Escreva aqui..." />
-             
+        <textarea name="" cols="1" rows="10" placeholder="Escreva aqui..."></textarea>           
         <ion-icon name="paper-plane-outline"></ion-icon>
     </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
