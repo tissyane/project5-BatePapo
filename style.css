@@ -1,9 +1,7 @@
 
 body {
-    width: 900px;
     font-family: 'Roboto', sans-serif;
-    background-color: #F3F3F3;
-    
+    background-color: #F3F3F3;   
 }
 
 
@@ -79,7 +77,6 @@ textarea::placeholder {
     width: 100vw;
     margin-top: 100px;
     margin-bottom: 80px;
-     
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 400;
@@ -122,14 +119,15 @@ textarea::placeholder {
 
 
 aside {
-    width: 259px;   
+    width: 70vw;
+    max-width: 259px;   
     height: 100%;
     margin-left: 118px;
     background-color: #FFFFFF; 
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 2;  
+    z-index: 1;  
 }
 
 .escondido {
@@ -181,7 +179,6 @@ aside {
     margin-right: 27px;
     font-size: 16px;
     font-weight: 400;
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
