@@ -78,6 +78,13 @@ function showMessages(msg) {
         break;
     }
   }
+  scroll();
+}
+
+function scroll() {
+  const chat = document.querySelector(".messages")
+  const lastmsg = chat.lastElementChild
+  lastmsg.scrollIntoView();
 }
 
 function keepConected() {
