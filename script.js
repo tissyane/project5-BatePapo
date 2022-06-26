@@ -1,17 +1,17 @@
 function showParticipants() {
   let activate = document.querySelector(".participants");
-  activate.classList.remove("escondido");
+  activate.classList.remove("hidden");
 }
 
 function hideParticipants() {
   let disable = document.querySelector(".participants");
-  disable.classList.add("escondido");
+  disable.classList.add("hidden");
 }
 
 nameLogin();
 function nameLogin() {
   login = prompt("Escolha um nome de usuário!");
-  pessoa = {
+  person = {
     name: login,
   };
   start();
@@ -20,7 +20,7 @@ function nameLogin() {
 function start() {
   let promise = axios.post(
     "https://mock-api.driven.com.br/api/v6/uol/participants",
-    pessoa
+    person
   );
   promise.then(enterTheRoom);
   promise.catch(cantEnter);
@@ -90,7 +90,7 @@ function scroll() {
 function keepConected() {
   const promise = axios.post(
     "https://mock-api.driven.com.br/api/v6/uol/status",
-    pessoa
+    person
   );
   promise.then();
   promise.catch(sair);
@@ -127,16 +127,22 @@ function sendMessage() {
     novaMsg
   );
   promise.then(updateMessages);
-  promise.catch(cantSend);
+  promise.catch(refreshPage);
 
   msgInput.value = "";
 }
 
-function cantSend(notSend) {
-  if (notSend.response.status === 400) {
-    alert("Não foi possível enviar sua mensagem");
-  }
+function refreshPage(){
+  window.location.reload();
 }
+
+document.addEventListener("keypress", function(e) {
+
+  if(e.key === "Enter") {
+  const btn = document.querySelector(".send_button");
+  btn.click();
+  }
+})
 
 const online = setInterval(keepConected, 5000);
 const atualizado = setInterval(updateMessages, 3000);
