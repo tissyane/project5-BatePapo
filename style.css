@@ -1,193 +1,189 @@
-
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #F3F3F3;   
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3f3;
 }
 
-
 header {
-    width: 100vw;
-    height: 80px;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;    
-    z-index: 1;   
+  width: 100vw;
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 header ion-icon {
-    font-size: 45px;
-    margin-right: 22px;
+  font-size: 45px;
+  margin-right: 22px;
 }
 
 header ion-icon:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 header img {
-    width: 75px;
-    margin-left: 22px;
+  width: 75px;
+  margin-left: 22px;
 }
 
 footer {
-    width: 100vw;
-    height: 80px;
-    margin-top: 80px;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
+  width: 100vw;
+  height: 80px;
+  margin-top: 80px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 footer ion-icon {
-    font-size: 26px;
-    margin-right: 22px;
+  font-size: 26px;
+  margin-right: 22px;
+}
+
+footer ion-icon:hover {
+  cursor: pointer;
 }
 
 textarea {
-    border: none;
-    outline: none;
-    margin-left: 17px; 
-    height: 70px;
-    width: 100vw;
-    resize: none;  
-    margin-top: 20px;
-    font-family: "Roboto";
-    font-size: 18px;
-    font-weight: 400;
+  border: none;
+  outline: none;
+  margin-left: 17px;
+  height: 70px;
+  width: 100vw;
+  resize: none;
+  margin-top: 20px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
 }
 
 textarea::placeholder {
-    font-family: "Roboto";
-    font-size: 18px;
-    font-weight: 400;
-    font-style: italic;
-    color: #000000;
-    
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: #000000;
 }
 
 .messages_container {
-    margin-top: 106px;
-    margin-bottom: 86px;
+  margin-top: 106px;
+  margin-bottom: 86px;
+}
+/*
+.mensagens {
+  width: 100vw;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+}
+*/
+.msg_time {
+  color: #aaaaaa;
 }
 
-.mensagens {
-    width: 100vw; 
+.status, .msg_to_all, .msg_private  {
+    width: 100vw;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 400;
     line-height: 16.41px;
+    padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
 }
 
-.horario {
-    color:#AAAAAA;
-    
-}
 .status {
-    background-color: #DCDCDC;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 8px;
-    margin-bottom: 3px;
-    display: flex;
-    align-items: center;
+    background-color: #dcdcdc;
 }
 
-.msg_to_all, .msg_public {
-    background-color: #FFFFFF;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 8px;
-    margin-bottom: 3px;
-    display: flex;
-    align-items: center;
+.msg_to_all {
+  background-color: #ffffff;
 }
 
 .msg_private {
-    background-color: #FFDEDE;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-bottom: 3px;
-    padding-left: 8px;
-    display: flex;
-    align-items: center;
+  background-color: #ffdede;
 }
 
-
 aside {
-    width: 70vw;
-    max-width: 259px;   
-    height: 100%;
-    margin-left: 118px;
-    background-color: #FFFFFF; 
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;  
+  width: 70vw;
+  max-width: 259px;
+  height: 100%;
+  margin-left: 118px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .escondido {
-    display: none;
+  display: none;
 }
 
-.top, .visibility {
-    height: 84px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18.75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
+.top,
+.visibility {
+  height: 84px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .visibility {
-    height: 60px;
+  height: 60px;
 }
 
-.all, .contact{
-    height: 36px;
-    margin-right: 27px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18.75px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+.all,
+.contact {
+  height: 36px;
+  margin-right: 27px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .contact_list ion-icon {
-    font-size: 25px;
-    margin-left: 18px;
-    margin-right: 8px;
+  font-size: 25px;
+  margin-left: 18px;
+  margin-right: 8px;
 }
 
 .contact_info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .lock {
-    margin-top: 10px;
-    margin-right: 27px;
-    font-size: 16px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 27px;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .lock ion-icon {
-    font-size: 22px;
-    margin-left: 18px;
-    margin-right: 8px;
+  font-size: 22px;
+  margin-left: 18px;
+  margin-right: 8px;
 }
