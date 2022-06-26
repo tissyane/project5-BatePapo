@@ -79,6 +79,7 @@ function showMessages(msg) {
     }
   }
   scroll();
+  
 }
 
 function scroll() {

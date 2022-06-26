@@ -90,7 +90,7 @@ textarea::placeholder {
   font-size: 14px;
   font-weight: 400;
   line-height: 16.41px;
-  word-break: normal;
+  word-break: break-word;
   padding: 8px;
   margin-bottom: 3px;
   display: flex;
