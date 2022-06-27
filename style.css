@@ -177,7 +177,7 @@ textarea::placeholder {
   background-color: #ffdede;
 }
 
-aside {
+.participants {
   width: 70vw;
   max-width: 259px;
   height: 100%;
@@ -186,10 +186,14 @@ aside {
   position: fixed;
   top: 0;
   right: 0;
-  
+  z-index: 1;
 }
 
-.hidden, .escondido {
+.hidden {
+  display: none;
+}
+
+.escondido {
   display: none;
 }
 

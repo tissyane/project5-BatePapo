@@ -131,8 +131,11 @@ function sendMessage() {
   msgInput.value = "";
 }
 
-document.addEventListener("keypress", function (e) {
-  if (e.key === "Enter") {
+document.querySelector(".send_msg").addEventListener("keypress", function (e) {
+  let texto = document.querySelector(".send_msg");
+  if (e.key === "Enter" && e.shiftKey) {
+    texto+="\n";
+  } else if (e.key === "Enter") {
     const btn = document.querySelector(".send_button");
     e.preventDefault()
     btn.click();
